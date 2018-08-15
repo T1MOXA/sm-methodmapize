@@ -2,7 +2,7 @@
 # Methodmapizer for SourcePawn 1.7+
 # Replaces all native calls with their equivalent methodmap call.
 # By Peace-Maker
-# Version 1.0
+# Version 1.2
 
 import sys
 import re
