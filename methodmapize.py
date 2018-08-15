@@ -33,8 +33,8 @@ for i in range(1, len(sys.argv)):
 		code = re.sub(r"GetAdminFlag\s*\(\s*([^\,]+)\s*,\s*", r"\1.HasFlag(", code)
 		code = re.sub(r"AdminInheritGroup\s*\(\s*([^\,]+)\s*,\s*", r"\1.InheritGroup(", code)
 		code = re.sub(r"SetAdminPassword\s*\(\s*([^\,]+)\s*,\s*", r"\1.SetPassword(", code)
-		code = re.sub(r"GetAdminGroupCount\s*\(\s*([^\)]+)\s*\)", r"\1\.GroupCount", code)
-		code = re.sub(r"GetAdminImmunityLevel\s*\(\s*([^\)]+)\s*\)", r"\1\.ImmunityLevel", code)
+		code = re.sub(r"GetAdminGroupCount\s*\(\s*([^\)]+)\s*\)", r"\1.GroupCount", code)
+		code = re.sub(r"GetAdminImmunityLevel\s*\(\s*([^\)]+)\s*\)", r"\1.ImmunityLevel", code)
 		code = re.sub(r"SetAdminImmunityLevel\s*\(\s*([^\,]+)\s*,\s*([^\)]+)\s*\)", r"\1.ImmunityLevel = \2", code)
 
 		# GroupId
@@ -45,8 +45,8 @@ for i in range(1, len(sys.argv)):
 		code = re.sub(r"GetAdmGroupImmunity\s*\(\s*([^\,]+)\s*,\s*", r"\1.GetGroupImmunity(", code)
 		code = re.sub(r"GetAdmGroupAddFlag\s*\(\s*([^\,]+)\s*,\s*", r"\1.HasFlag(", code)
 		code = re.sub(r"SetAdmGroupAddFlag\s*\(\s*([^\,]+)\s*,\s*", r"\1.SetFlag(", code)
-		code = re.sub(r"GetAdmGroupImmuneCount\s*\(\s*([^\)]+)\s*\)", r"\1\.GroupImmunitiesCount", code)
-		code = re.sub(r"GetAdmGroupImmunityLevel\s*\(\s*([^\)]+)\s*\)", r"\1\.ImmunityLevel", code)
+		code = re.sub(r"GetAdmGroupImmuneCount\s*\(\s*([^\)]+)\s*\)", r"\1.GroupImmunitiesCount", code)
+		code = re.sub(r"GetAdmGroupImmunityLevel\s*\(\s*([^\)]+)\s*\)", r"\1.ImmunityLevel", code)
 		code = re.sub(r"SetAdmGroupImmunityLevel\s*\(\s*([^\,]+)\s*,\s*([^\)]+)\s*\)", r"\1.ImmunityLevel = \2", code)
 
 		# ArrayList
@@ -57,7 +57,7 @@ for i in range(1, len(sys.argv)):
 		code = re.sub(r"FindValueInArray\s*\(\s*([^\,]+)\s*,\s*", r"\1.FindValue(", code)
 		code = re.sub(r"GetArrayArray\s*\(\s*([^\,]+)\s*,\s*", r"\1.GetArray(", code)
 		code = re.sub(r"GetArrayCell\s*\(\s*([^\,]+)\s*,\s*", r"\1.Get(", code)
-		code = re.sub(r"GetArraySize\s*\(\s*([^\)]+)\s*\)", r"\1\.Length", code)
+		code = re.sub(r"GetArraySize\s*\(\s*([^\)]+)\s*\)", r"\1.Length", code)
 		code = re.sub(r"GetArrayString\s*\(\s*([^\,]+)\s*,\s*", r"\1.GetString(", code)
 		code = re.sub(r"PushArrayArray\s*\(\s*([^\,]+)\s*,\s*", r"\1.PushArray(", code)
 		code = re.sub(r"PushArrayCell\s*\(\s*([^\,]+)\s*,\s*", r"\1.Push(", code)
